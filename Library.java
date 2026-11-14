@@ -26,14 +26,14 @@ public class Library {
         if (items.isEmpty()) { System.out.println("No items in the library."); return; }
         System.out.println("ID         | Type      | Title                        | Status");
         System.out.println("-----------------------------------------------------------------");
-        for (LibraryItem item : items) item.displayInfo();   // runtime polymorphism
+        for (LibraryItem item : items) item.displayInfo();   
     }
 
     public void displayAllMembers() {
         if (members.isEmpty()) { System.out.println("No members registered."); return; }
         System.out.println("ID       | Role      | Name               | Loans");
         System.out.println("-----------------------------------------------------------------");
-        for (Person p : members) p.displayInfo();            // runtime polymorphism
+        for (Person p : members) p.displayInfo();            
     }
 
     public void borrowItem(String memberId, String itemId) {
